@@ -19,8 +19,7 @@ export const Background = styled.div`
     height: auto;
     width: auto;
         opacity: 0.88;
-    min-width: 100vw;
-    max-width: auto;
+    min-width: 100vw;    
     min-height: auto;
     max-height: 720px;
     

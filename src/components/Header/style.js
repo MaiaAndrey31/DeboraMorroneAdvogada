@@ -2,13 +2,13 @@ import styled from "styled-components"
 import { theme } from "../../styles/theme"
 
 export const Container = styled.div`
-position: fixed;
+position: relative;
 display: flex;
 justify-content: space-between;
 padding: 1rem;
 min-width: 100%;
 z-index: 2;
-background-color: rgb(51,51,51, 0.4);
+background-color: rgb(51,51,51, 0.8);
 
 
 
@@ -32,14 +32,13 @@ ul {
     :hover {
             cursor: pointer;
             color: ${theme.colors.secondary};
-            font-weight: bold;
+            transform: scale(1.01);
             transition: all ease-in-out 0.4s;
         }
     li {
         display: flex;
         justify-content: space-around;
         font-family: 'Gotham-Light';
-        font-weight: light;
         font-size: 20px;
         color: ${theme.colors.light};
 

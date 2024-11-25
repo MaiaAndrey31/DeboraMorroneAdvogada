@@ -8,9 +8,7 @@ justify-content: space-between;
 background-color: ${theme.colors.primary} ;
 min-width: 100%;
 min-height: 40px;
-top: 0;
 max-height: 80px;
-z-index: 1;
 
 
 `
