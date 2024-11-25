@@ -9,7 +9,7 @@ background-color: ${theme.colors.primary} ;
 min-width: 100%;
 min-height: 40px;
 max-height: 80px;
-
+z-index: 1;
 
 `
 
@@ -44,7 +44,7 @@ align-items: center;
 gap: 0.40rem;
 
 p {
-    color: ${theme.colors.secondary};
+    color: ${theme.colors.light};
     font-family: 'Gotham-Light';
     font-weight: light;
     

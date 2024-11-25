@@ -1,5 +1,6 @@
 import { Container, ContainerLeft, ContainerRight } from './style'
 import Logo from '../../assets/logo.png'
+import {Button} from '../Button'
 export default function Header() {
   return (
     <Container>
@@ -12,7 +13,9 @@ export default function Header() {
           <li>Contato</li>
         </ul>
       </ContainerLeft>
-      <ContainerRight></ContainerRight>
+      <ContainerRight>
+        <Button>Fale Conosco</Button>
+      </ContainerRight>
     </Container>
   )
 }

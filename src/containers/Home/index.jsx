@@ -1,16 +1,17 @@
 import Header from '../../components/Header'
+import TopBar from '../../components/TopBar'
 import { Background, Container } from './style'
 import HomeBG from '../../assets/videoBGHome.mp4'
-import TopBar from '../../components/TopBar'
+
 
 
 
 export default function Home() {
   return (
-    <Container>
-          <TopBar />
-      <Header />
+    <Container>     
       <Background>
+      <TopBar />
+      <Header />
         <video loop autoPlay muted className="conteudo-background ">
           <source src={HomeBG} />{' '}
         </video>

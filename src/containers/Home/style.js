@@ -11,15 +11,15 @@ width: 100vw;
 
 export const Background = styled.div`
   .background {
-    background-size: cover;
+    background-size: adjust;
     z-index: -1;
     
   }
   .conteudo-background {
-    height: auto;
+    
     width: auto;
         opacity: 0.88;
-    min-width: 100vw;    
+    min-width: 100%;    
     min-height: auto;
     max-height: 720px;
     
