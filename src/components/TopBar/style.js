@@ -3,13 +3,15 @@ import { theme } from "../../styles/theme"
 
 export const Container = styled.div`
 display: flex;
+position: relative;
 flex-direction: row;
 justify-content: space-between;
 background-color: ${theme.colors.primary} ;
 min-width: 100%;
 min-height: 40px;
 max-height: 80px;
-z-index: 1;
+z-index: 2;
+position: relative;
 
 `
 

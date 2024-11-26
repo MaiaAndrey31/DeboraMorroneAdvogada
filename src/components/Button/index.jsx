@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 
 export function Button({children}) {
   return <ContainerButton>
-        {children}
-        <WhatsAppIcon className='icon'/>
+       {children}
+        <WhatsAppIcon style={{ fontSize: 40, fontWeight: 'bold', }} className='icon'/>
       
     </ContainerButton>
   

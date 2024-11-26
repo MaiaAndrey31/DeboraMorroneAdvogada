@@ -2,19 +2,19 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme'
 
 export const Container = styled.div`
-  position: fixed;
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  min-width: 98.2vw;
+  height: 80px;
   z-index: 1;
-  overflow: hidden;
   background-color: rgb(51, 51, 51, 0.8);
 `
 
 export const ContainerLeft = styled.div`
   display: flex;
-  width: 70vw;
+  width: 70%;
   justify-content: space-between;
   align-items: center;
   .logo {
@@ -23,8 +23,9 @@ export const ContainerLeft = styled.div`
 
   ul {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     padding-right: 3rem;
+    flex-wrap: wrap;
 
     :hover {
       cursor: pointer;
@@ -34,6 +35,7 @@ export const ContainerLeft = styled.div`
     }
     li {
       display: flex;
+      
       justify-content: space-around;
       font-family: 'Gotham-Light';
       font-size: 20px;
@@ -42,7 +44,7 @@ export const ContainerLeft = styled.div`
   }
 `
 export const ContainerRight = styled.div`
-width: 175px;
+// width: 250px;
 margin-right: 70px;
 
 :hover{
