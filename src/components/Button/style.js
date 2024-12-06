@@ -14,7 +14,7 @@ justify-content: center;
   height: 52px;
   border: 0;
   border-radius: 8px;
-  background-color: ${theme.colors.secondary};
+  background-color: ${theme.colors.primary};
   color: ${theme.colors.light};
   font-family: 'Gotham-Black';
   font-size: 20px;

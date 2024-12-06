@@ -6,7 +6,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { theme } from '../../styles/theme';
 const options = [
   'Home',
-  'Quem Somos',
+  'Sobre mim',
   'Serviços',
   'Contato',
   
@@ -33,9 +33,9 @@ export default function LongMenu() {
         aria-controls="long-menu"
         aria-haspopup="true"
         onClick={handleClick}
-        style={{color: theme.colors.light, width: '60px'}}
-      >
-        <MenuIcon style={{color: theme.colors.light, width: '60px'}}/>
+        style={{color: theme.colors.secondary, width: '60px'}}
+      >Menu
+        <MenuIcon style={{color: theme.colors.secondary, width: '60px'}}/>
       </IconButton >
       <Menu
         id="long-menu"
@@ -48,7 +48,7 @@ export default function LongMenu() {
             maxHeight: ITEM_HEIGHT * 4.5,
             width: '20ch',
             color: theme.colors.light,
-            backgroundColor: theme.colors.dark,
+            backgroundColor: theme.colors.primary,
             fontFamily: 'Gotham-Light'
           },
         }}

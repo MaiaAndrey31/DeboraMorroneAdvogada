@@ -1,7 +1,7 @@
 import Header from '../../components/Header'
 import TopBar from '../../components/TopBar'
 import { Background, Container, HomeContent, HomeTitle } from './style'
-import HomeBG from '../../assets/videoBGHome.mp4'
+import HomeBG from '../../assets/HomeSchooling.mp4'
 import { Button } from '../../components/Button'
 
 
@@ -19,10 +19,10 @@ export default function Home() {
       </Background>
       
       <HomeContent>
-        <HomeTitle>Especialistas em Direito <span>Educacional</span></HomeTitle>
-        <p>Dedicados a oferecer soluções jurídicas eficientes para questões relacionadas a propriedades. Conte com nossa expertise para orientação precisa, seja em despejos, reintegração de posse, usucapião ou outras demandas imobiliárias. Garantimos uma assessoria jurídica sólida para proteger seus interesses no universo imobiliário.</p>
+        <HomeTitle>Apoiando Famílias e Estudantes na Jornada <span>Educacional</span></HomeTitle>
+        <p>Advogada especializada em Direito Civil e Educacional, ofereço soluções jurídicas específicas e acessíveis. Seja para educação domiciliar, inclusão escolar, ou responsabilidade civil, estou aqui para ajudar sua família a superar desafios e construir um futuro educacional mais justo.        .</p>
 
-        <div><Button>Fale com um especialista</Button></div>      
+        <div><Button>Precisa de Ajuda? Clique Aqui!</Button></div>      
       </HomeContent>
       
     </Container>

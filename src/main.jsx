@@ -12,5 +12,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GlobalStyles />
     <Home/>
+    <WhoSession/>
   </StrictMode>
 )

@@ -9,43 +9,35 @@ export const Container = styled.div`
   padding: 1rem;
   height: 80px;
   z-index: 1;
-  background-color: rgb(51, 51, 51, 0.8);
+  background-color: rgb(51, 51, 51, 0.2);
 `
 
 export const ContainerLeft = styled.div`
   display: flex;
-  width: 70%;
-  justify-content: space-between;
+  width: 50%;
+  gap: 43rem;
   align-items: center;
-  .logo {
-    max-width: 270px;
-  }
+  margin-left: 1rem;
+ 
 
-  ul {
-    display: flex;
-    gap: 5rem;
-    padding-right: 3rem;
-    flex-wrap: wrap;
+  
 
     :hover {
       cursor: pointer;
       color: ${theme.colors.secondary};
       transform: scale(1.01);
       transition: all ease-in-out 0.3s;
-    }
-    li {
-      display: flex;
-      
-      justify-content: space-around;
-      font-family: 'Gotham-Light';
-      font-size: 20px;
-      color: ${theme.colors.light};
-    }
+    
   }
 `
 export const ContainerRight = styled.div`
-// width: 250px;
-margin-right: 70px;
+display: flex;
+align-items: start;
+justify-content: left;
+.logo {
+    max-width: 270px;
+
+  }
 
 :hover{
     cursor: pointer;
