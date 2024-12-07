@@ -17,9 +17,12 @@ export const ContainerLeft = styled.div`
   width: 50%;
   gap: 43rem;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: .5rem;
  
+  .logo {
+    max-width: 270px;
 
+  }
   
 
     :hover {
@@ -33,11 +36,9 @@ export const ContainerLeft = styled.div`
 export const ContainerRight = styled.div`
 display: flex;
 align-items: start;
-justify-content: left;
-.logo {
-    max-width: 270px;
+justify-content: center;
+margin-right: 2rem;
 
-  }
 
 :hover{
     cursor: pointer;

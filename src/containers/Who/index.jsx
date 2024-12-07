@@ -1,11 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Container, ContainerLeft, ContainerRight } from './style'
 
 import PersonalPhoto from '../../assets/personal.jpg'
+import { Button } from '../../components/Button'
 export default function WhoSession() {
   return (
     <Container>
       <ContainerLeft>
-        <h2>Compromisso com a Educação e os Direitos da Sua Família</h2>
+        <h2> "Compromisso com a Educação e os Direitos da Sua Família"</h2>
         <p>
           Como mãe de três filhos, conheço de perto as dificuldades enfrentadas
           pelas famílias. Minhas experiências, inclusive como mãe de um jovem
@@ -21,7 +23,9 @@ export default function WhoSession() {
       <ContainerRight>
         <div>
           <img src={PersonalPhoto} />
+          
         </div>
+        <Button>Fale comigo Agora</Button>
       </ContainerRight>
     </Container>
   )

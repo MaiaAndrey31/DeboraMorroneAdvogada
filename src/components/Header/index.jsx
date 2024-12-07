@@ -5,10 +5,11 @@ export default function Header() {
   return (
     <Container>
       <ContainerLeft>
-        <LongMenu />
+      <img src={Logo} className="logo" />
       </ContainerLeft>
       <ContainerRight>
-        <img src={Logo} className="logo" />
+      <LongMenu />
+
       </ContainerRight>
     </Container>
   )
