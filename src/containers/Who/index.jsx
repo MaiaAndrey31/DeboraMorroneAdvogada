@@ -25,7 +25,7 @@ export default function WhoSession() {
           <img src={PersonalPhoto} />
           
         </div>
-        <Button>Fale comigo Agora</Button>
+        <Button>Entre em Contato</Button>
       </ContainerRight>
     </Container>
   )

@@ -8,10 +8,12 @@ import './fonts/Gotham-Black.otf'
 import './fonts/Gotham-Light.otf'
 import './fonts/GothamLight.ttf'
 import WhoSession from './containers/Who/index.jsx'
+import MyServices from './containers/MyServices/index.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GlobalStyles />
     <Home/>
     <WhoSession/>
+    <MyServices/>
   </StrictMode>
 )
