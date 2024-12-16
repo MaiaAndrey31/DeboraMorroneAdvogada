@@ -8,7 +8,7 @@ export default function WhoSession() {
     <Container>
       <ContainerLeft>
         <h2> "Compromisso com a Educação e os Direitos da Sua Família"</h2>
-        <p>
+        <p> 
           Como mãe de três filhos, conheço de perto as dificuldades enfrentadas
           pelas famílias. Minhas experiências, inclusive como mãe de um jovem
           com TEA e de um adolescente vítima de violência escolar, me inspiraram
