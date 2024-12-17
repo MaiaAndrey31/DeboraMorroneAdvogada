@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { theme } from "./theme"
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -9,8 +10,19 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     max-width: 100%;
 
+
 }
 
+::-webkit-scrollbar{
+    background-color: ${theme.colors.secondary};
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: ${theme.colors.primary};
+    border: 1px solid ${theme.colors.light};
+    border-radius: 50px;
+}
 @font-face {
  font-family: "Gotham-Bold";
  src: local("Gotham-Bold"),
