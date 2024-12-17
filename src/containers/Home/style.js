@@ -17,7 +17,6 @@ export const Background = styled.div`
     position: fixed;
     top: 0;
     object-fit: cover;
-
     min-width: 100%;
     min-height: 100%;
   }

@@ -69,7 +69,7 @@ export const ContainerRight = styled.div`
 
     img {
       border: 8px inset ${theme.colors.secondary};
-
+      object-fit: cover;
       height: 580px;
       width: 420px;
       border-radius: 50%;

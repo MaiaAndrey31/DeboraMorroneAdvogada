@@ -28,6 +28,7 @@ background: linear-gradient(
   border-left: 30px solid ${theme.colors.primary};
 img{
     max-height: 590px;
+    object-fit: cover;
     border-radius: 20px;
     border-right: 10px solid ${theme.colors.primary} ;
 }

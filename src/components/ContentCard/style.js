@@ -41,6 +41,7 @@ h5{
 }
 img{
     width: 700px;
+    object-fit: cover;
     border-radius: 5rem;
     border-bottom: 8px solid ${theme.colors.primary};
 }
