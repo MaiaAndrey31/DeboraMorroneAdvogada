@@ -19,6 +19,8 @@ padding: 1rem;
 display: flex;
 flex-direction: column;
 gap:2rem;
+background-color: ${theme.colors.primary};
+border-radius:   30px 100000px 100px 10000px;
 img{
     max-width: 250px;
 }
@@ -27,6 +29,7 @@ export const ContainerCenter = styled.div`
 width: 30%;
 padding: 1rem;
 display: flex;
+align-items: center;
 flex-direction: column;
 gap:2rem;
 p {

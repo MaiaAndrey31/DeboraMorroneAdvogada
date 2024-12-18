@@ -43,15 +43,13 @@ export default function Footer() {
         </Contact>
       </ContainerLeft>
       <ContainerCenter>
-      <p>(11) 98877-6655</p>
-      <p>(11) 98877-6655</p>
-      <p>(11) 98877-6655</p>
-      <p>(11) 98877-6655</p>
-
-    
+        <p>Home</p>
+        <p> Sobre mim</p>
+        <p>Serviços</p>
+        <p>Contato</p>
       </ContainerCenter>
       <ContainerRight>
-      <Contact>
+        <Contact>
           <PhoneIcon
             style={{
               fontSize: 40,
@@ -73,7 +71,8 @@ export default function Footer() {
           />
           <p>deboraadvogada@adv.com.br</p>
         </Contact>
-<Button>Entrar em Contato</Button>      </ContainerRight>
+        <Button>Entrar em Contato</Button>{' '}
+      </ContainerRight>
     </Container>
   )
 }

@@ -12,6 +12,7 @@ import WhoSession from './containers/Who/index.jsx'
 import MyServices from './containers/MyServices/index.jsx'
 import BlogSession from './containers/Blog/index.jsx'
 import Footer from './containers/Footer/index.jsx'
+import Feedback from './containers/FeedBack/index.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <GlobalStyles />
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
     <WhoSession/>
     <MyServices/>
     <BlogSession/>
+    <Feedback/>
     <Footer/>
   </StrictMode>
 )
