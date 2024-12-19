@@ -13,12 +13,11 @@ import LocaleSchool from '../../assets/Vagas.jpg'
 
 import ContentCard from '../../components/ContentCard'
 import ContentCardReverse from '../../components/ContentCard copy'
-import { FlipTextDemo } from '../../components/FlipText'
 
 export default function MyServices() {
   return (
     <Container>
-      <FlipTextDemo text='Serviços' />
+      <h1>Serviços</h1>
       <ContentCard
         title="Assessoria Jurídica em Ensino Domiciliar"
         image={[ServiceOne]}
