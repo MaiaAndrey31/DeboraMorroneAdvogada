@@ -2,15 +2,15 @@ import styled from "styled-components"
 import { theme } from "../../styles/theme"
 
 export const Container = styled.div`
-height: 100vh;
-width: 100%;
+height: auto;
+width: 100vw;
 background-color: ${theme.colors.primary};
 
 `
 
 
 export const Title = styled.div`
- height: 10vh;
+ height: 10%;
  display: flex;
  padding: 1rem;
  align-items: center;
@@ -23,4 +23,12 @@ export const Title = styled.div`
  }
 
 
+`
+
+export const ReviewBox = styled.div`
+
+display: flex;
+gap: .1rem;
+justify-content: space-around;
+padding: 2rem;
 `
