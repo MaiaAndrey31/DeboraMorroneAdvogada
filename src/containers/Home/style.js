@@ -3,7 +3,17 @@ import { theme } from '../../styles/theme'
 
 export const Container = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+
+  @media (min-width: 992px) and (max-width: 1199px) { 
+
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 480px) { 
+    height: auto;
+    min-width: 100%;
+  }
 `
 
 export const Background = styled.div`
@@ -17,9 +27,17 @@ export const Background = styled.div`
     position: fixed;
     top: 0;
     object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+      object-fit: fill;
+     }
+    
+    @media (max-width: 480px) { 
+    overflow-x: hidden;
+    object-fit: fill;
   }
+}
 
   .mascara-video {
     height: 100%;
@@ -42,7 +60,7 @@ export const HomeContent = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100%;
+  height: auto;
   width: 100%;
   :hover {
     cursor: pointer;
@@ -78,6 +96,12 @@ export const HomeContent = styled.div`
       letter-spacing: 1px;
     }
   }
+
+  @media (min-width: 992px) and (max-width: 1199px) { 
+    justify-content: flex-start;
+    gap: 1.2rem;
+    padding: 2rem;
+  }
 `
 
 export const HomeTitle = styled.h1`
@@ -89,4 +113,10 @@ export const HomeTitle = styled.h1`
   span {
     color: ${theme.colors.secondary};
   }
+
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    font-size: 2.5rem;
+   }
+  
 `

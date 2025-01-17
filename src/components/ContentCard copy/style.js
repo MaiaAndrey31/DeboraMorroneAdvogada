@@ -15,7 +15,10 @@ background: linear-gradient(
     rgba(51,51,51, 0.8) 30%,
     rgba(248,184,100, 1) 90%
   );
+  @media (min-width: 992px) and (max-width: 1199px) { 
 
+width: auto;
+}
 
 
 `
@@ -34,6 +37,12 @@ p{
     font-family: 'Gotham-Light';
     color: ${theme.colors.light};
     
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {} 
+
+p {
+    font-size: 1.5rem;
 }
 
 
@@ -63,5 +72,15 @@ img{
     width: 700px;
     object-fit: cover;
     border-radius: 5rem;
-    border-bottom: 8px solid ${theme.colors.primary};}
+    border-bottom: 8px solid ${theme.colors.primary};
+    
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+h5 {
+    font-size: 1.5rem;
+}
+
+}
 `

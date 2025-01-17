@@ -45,6 +45,22 @@ export const ContainerLeft = styled.div`
     text-align: center;
     font-family: 'Gotham-Light';
   }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    padding: 5rem .225rem;
+    h2 {
+      font-size: 2.3rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.4rem;
+      letter-spacing: 0.01rem;
+      line-height: 1.6rem;
+      max-width: 80%;
+      text-align: center;
+      margin-left: 10px;
+    }
+  }
 `
 
 export const ContainerRight = styled.div`
@@ -58,7 +74,7 @@ export const ContainerRight = styled.div`
   background: linear-gradient(
     103deg,
     rgba(127, 15, 16, 0.01) 15%,
-    rgba(127, 15, 16, 0.5) 40%,
+    rgba(127, 15, 16, 0.4) 40%,
     rgba(127, 15, 16, 0.5) 95%
   );
 
@@ -73,6 +89,15 @@ export const ContainerRight = styled.div`
       height: 580px;
       width: 420px;
       border-radius: 50%;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+      gap: 1.3rem;
+      
+      img {
+        width: 360px;
+        height: 580px;
+      }
     }
   }
 `

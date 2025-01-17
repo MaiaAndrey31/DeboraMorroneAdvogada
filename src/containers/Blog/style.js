@@ -4,12 +4,15 @@ import { theme } from "../../styles/theme"
 
 
 export const Container = styled.div`
-height: 100vh;
+height: 100%;
 width: 100%;
 display: flex;
 gap: 0.5rem;
 background-color: ${theme.colors.secondary};
 
+@media (min-width: 992px) and (max-width: 1199px) { 
+padding: 3rem 0;
+}
 `
 
 export const ContainerRight = styled.div`
@@ -31,6 +34,14 @@ img{
     object-fit: cover;
     border-radius: 20px;
     border-right: 10px solid ${theme.colors.primary} ;
+}
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+  padding:  3rem  ;
+img{
+  max-height: 400px;
+  object-fit: fill;
+}
 }
 `
 
@@ -66,4 +77,15 @@ p{
     text-align: center;
     
 }
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+justify-content: flex-start;
+padding:  8rem 0 ;
+
+  h2 {
+    font-size: 1.5rem;
+  }
+p {
+    font-size: 1.2rem;
+}}
 `

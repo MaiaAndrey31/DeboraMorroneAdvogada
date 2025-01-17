@@ -5,7 +5,6 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   height: 80px;
   z-index: 1;
@@ -14,13 +13,14 @@ export const Container = styled.div`
 
 export const ContainerLeft = styled.div`
   display: flex;
-  width: 50%;
-  gap: 43rem;
+  width: 50%;  
   align-items: center;
   margin-left: .5rem;
  
   .logo {
     max-width: 270px;
+
+    
 
   }
   
@@ -32,12 +32,19 @@ export const ContainerLeft = styled.div`
       transition: all ease-in-out 0.3s;
     
   }
+
+  @media (min-width: 992px) and (max-width: 1199px) { 
+      .logo {
+        width: 200px;
+      }
+    }
 `
 export const ContainerRight = styled.div`
 display: flex;
-align-items: start;
+align-items: end;
 justify-content: center;
 margin-right: 2rem;
+
 
 
 :hover{

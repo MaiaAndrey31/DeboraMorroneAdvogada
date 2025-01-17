@@ -1,10 +1,10 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-min-height: 240px;
-width: 390px;
+min-height: auto;
+width: auto;
 border-radius: 15px;
-background-color: rgb(255, 249, 241, .7);
+background-color: rgb(255, 249, 241, .65);
 
 
 
@@ -12,7 +12,6 @@ background-color: rgb(255, 249, 241, .7);
     
     display: flex;
     gap: 1rem;
-    height: 60px;
     align-items: center;
      p {
         font-size: 1.4rem;
@@ -45,5 +44,15 @@ padding: 1rem;
         text-align: left;
     }
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .review {
+        p{
+            font-size: 1rem;
+        }
+    }
+ }
+
 
 `

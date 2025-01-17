@@ -16,6 +16,10 @@ background: linear-gradient(
     rgba(248,184,100, 1) 90%
   );
 
+  @media (min-width: 992px) and (max-width: 1199px) { 
+
+    width: auto;
+  }
 
 
 `
@@ -45,6 +49,15 @@ img{
     border-radius: 5rem;
     border-bottom: 8px solid ${theme.colors.primary};
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    h5 {
+        font-size: 1.5rem;
+    }
+    
+ }
+
 `
 
 export const TextContainer = styled.div`
@@ -62,6 +75,14 @@ p{
     font-family: 'Gotham-Light';
     color: ${theme.colors.light};
 }
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 `

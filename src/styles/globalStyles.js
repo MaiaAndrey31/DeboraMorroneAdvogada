@@ -9,13 +9,25 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     outline: none;
     max-width: 100%;
+    height: auto;
+    @media (min-width: 992px) and (max-width: 1199px) {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    
+    
+    }
 
 
+
+    @media (max-width: 480px) { 
+    
+}
 }
 
 ::-webkit-scrollbar{
     background-color: ${theme.colors.secondary};
-    width: 10px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -53,4 +65,7 @@ export const GlobalStyles = createGlobalStyle`
 .font-face-gm {
     font-family: "Gotham-Bold, Gotham-Black, Gotham-Light, GothamLight";
 }
+
+
+
 `

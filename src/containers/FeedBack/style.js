@@ -3,9 +3,14 @@ import { theme } from "../../styles/theme"
 
 export const Container = styled.div`
 height: auto;
-width: 100vw;
+width: auto;
 background-color: ${theme.colors.primary};
 
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+   padding: 1rem 0.2rem ;
+}
 `
 
 
@@ -31,4 +36,14 @@ display: flex;
 gap: .1rem;
 justify-content: space-around;
 padding: 2rem;
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+   flex-direction: column;
+   max-width: auto;
+   
+   justify-content: center;
+   align-items: center;
+ }
+
 `

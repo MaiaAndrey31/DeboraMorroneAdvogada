@@ -8,7 +8,6 @@ import {
 import Logo from '../../assets/logo.png'
 
 import InstagramIcon from '@material-ui/icons/Instagram'
-import YouTubeIcon from '@material-ui/icons/YouTube'
 import PhoneIcon from '@material-ui/icons/Phone'
 import EmailIcon from '@material-ui/icons/Email'
 import { theme } from '../../styles/theme'
@@ -31,15 +30,7 @@ export default function Footer() {
           <p>Instagram</p>
         </Contact>
         <Contact>
-          <YouTubeIcon
-            style={{
-              fontSize: 40,
-              color: `${theme.colors.secondary}`,
-              fontWeight: 'bold'
-            }}
-            className="icon"
-          />
-          <p>You Tube</p>
+          
         </Contact>
       </ContainerLeft>
       <ContainerCenter>

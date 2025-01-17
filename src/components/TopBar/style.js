@@ -5,25 +5,46 @@ export const Container = styled.div`
 display: flex;
 position: relative;
 flex-direction: row;
-justify-content: space-between;
+justify-content: space-around;
 background-color: ${theme.colors.primary} ;
 min-width: 100%;
-min-height: 40px;
-max-height: 80px;
+height: auto;
 z-index: 2;
 position: relative;
 
+@media (min-width: 992px) and (max-width: 1199px) { 
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+
+@media (max-width: 480px) { 
+    flex-direction: column;
+    gap: 1rem;
+   
+}
 `
 
 export const ContainerLeft = styled.div`
 display: flex;
-gap: 1rem;
+width: 100%;
 align-items: center;
 padding-left: 1rem;
 
 .icon {
     color: ${theme.colors.secondary};
     
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+     
+    align-items: center;
+    justify-content: center;
+ }
+@media (max-width: 480px) { 
 }
 
 `
@@ -36,6 +57,17 @@ padding-right: 1rem;
 
 .icon {
     color: ${theme.colors.secondary};
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+flex-direction: column;
+align-items: start;
+
+
+}
+@media (max-width: 480px) { 
     
 }
 `
@@ -51,5 +83,9 @@ p {
     font-weight: light;
     
 }
+@media (max-width: 480px) { 
+    margin: 0 auto;
+}
+
 
 `

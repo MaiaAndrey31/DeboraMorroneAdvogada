@@ -21,5 +21,10 @@ h1{
     border-bottom: 8px double ${theme.colors.primary};
 }
 
+
+@media (min-width: 992px) and (max-width: 1199px) { 
+padding: 0.1rem;
+}
+
 `
 

@@ -3,9 +3,9 @@ import { theme } from '../../styles/theme'
 
 
 export const Container = styled.div`
-min-width: 100%;
+width: max-content;
 height: max-content;
-padding: 5px 15px;
+padding: 1rem 1rem;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -23,7 +23,7 @@ export const     ContainerButton
 position: relative;
 display: flex;
 gap: 8px;
-padding: 5px 15px;
+padding: 1rem 2rem;
 align-items: center;
 justify-content: center;
   width: 100%;
