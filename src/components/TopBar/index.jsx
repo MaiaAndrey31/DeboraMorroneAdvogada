@@ -1,7 +1,7 @@
 import { Contact, Container } from "./style";
-import InstagramIcon from '@material-ui/icons/Instagram';
-import PhoneIcon from '@material-ui/icons/Phone';
-import EmailIcon from '@material-ui/icons/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 
 export default function TopBar(){
 
@@ -11,17 +11,25 @@ export default function TopBar(){
         
         
           <Contact>
-          <InstagramIcon className='icon'/>
+          <a href="https://www.instagram.com/deboramorrone.adv?igsh=bmc3NGZsM2x4cTN0" target="_blank">
+          <InstagramIcon className='icon' fontSize="large"/>
           <p>Instagram</p>
+          </a>
           </Contact>
            <Contact>
-           <PhoneIcon className='icon'/>
+           <a href="https://wa.me/5511976008146/?text=Ola!%20Gostaria%20de%20mais%20informações" target='_blank'>
+
+
+           <PhoneIcon className='icon' fontSize="large" />
            
-           <p>(11) 98877-6655</p>
+           <p>(11) 97600-8146</p>
+           </a>
            </Contact>
            <Contact>
-           <EmailIcon className='icon'/>
-           <p>deboraadvogada@adv.com.br</p>
+            <a href="mailto:deboramorrone@adv.oabsp.org.br" >
+           <EmailIcon className='icon' fontSize="large"/>
+           <p>deboramorrone@adv.oabsp.org.br</p>
+           </a>
            </Contact>
 
 

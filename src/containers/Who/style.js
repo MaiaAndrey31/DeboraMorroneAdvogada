@@ -9,6 +9,13 @@ export const Container = styled.div`
 
   align-items: center;
   justify-content: center;
+
+
+  @media (min-width: 481px) and (max-width: 767px) {
+  flex-direction: column ;
+  height: auto;
+
+}
 `
 
 export const ContainerLeft = styled.div`
@@ -45,6 +52,20 @@ export const ContainerLeft = styled.div`
     text-align: center;
     font-family: 'Gotham-Light';
   }
+
+      @media (min-width: 481px) and (max-width: 767px) {
+    height: auto;
+    width: 100%;
+    
+        h2 {
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+    
+      }
   @media (min-width: 992px) and (max-width: 1199px) {
     padding: 5rem .225rem;
     h2 {
@@ -91,6 +112,7 @@ export const ContainerRight = styled.div`
       border-radius: 50%;
     }
 
+
     @media (min-width: 992px) and (max-width: 1199px) {
       gap: 1.3rem;
       
@@ -98,6 +120,19 @@ export const ContainerRight = styled.div`
         width: 360px;
         height: 580px;
       }
+    }
+  }
+
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: auto;
+    min-width: 100%; 
+    padding: 2rem;
+
+    div {
+      min-width: 100%;
+      align-items: center;
+    justify-content: center;
     }
   }
 `

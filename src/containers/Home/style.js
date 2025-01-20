@@ -2,12 +2,23 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme'
 
 export const Container = styled.div`
-  height: 100vh;
+height: auto;
+  padding-bottom: 4rem; /* Adjusted for better spacing on smaller screens */
+  @media (max-width: 768px) {
+    padding-bottom: 2rem; /* Further adjust for tablets */
+  }
   width: 100%;
+
+  @media (min-width: 1200px) and (max-width: 1919px) {
+
+    padding-bottom: 2rem;
+   }
+
 
   @media (min-width: 992px) and (max-width: 1199px) { 
 
     width: 100%;
+    padding-bottom: 4rem;
     height: auto;
   }
   @media (max-width: 480px) { 
@@ -28,6 +39,12 @@ export const Background = styled.div`
     top: 0;
     object-fit: cover;
 
+    @media (min-width: 1200px) and (max-width: 1919px) {
+
+      object-fit: fill;
+     }
+
+
     @media (min-width: 992px) and (max-width: 1199px) {
 
       object-fit: fill;
@@ -37,11 +54,21 @@ export const Background = styled.div`
     overflow-x: hidden;
     object-fit: fill;
   }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow-x: hidden;
+
+
+   
+  }
 }
 
   .mascara-video {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     background: linear-gradient(
@@ -55,7 +82,9 @@ export const Background = styled.div`
 
 export const HomeContent = styled.div`
   display: flex;
-  gap: 2rem;
+    padding: 3.999rem 0rem; 
+    
+  gap: 4rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -77,7 +106,7 @@ export const HomeContent = styled.div`
     max-width: 70%;
     position: relative;
     font-family: 'Gotham-Light';
-    font-size: 22px;
+    font-size: 2rem;
     color: ${theme.colors.light};
   }
 
@@ -95,7 +124,17 @@ export const HomeContent = styled.div`
       background-color: transparent;
       letter-spacing: 1px;
     }
+
+   
   }
+  @media (min-width: 481px) and (max-width: 767px) {
+
+
+    p {
+      font-size: 1rem;
+
+    }
+    }
 
   @media (min-width: 992px) and (max-width: 1199px) { 
     justify-content: flex-start;
@@ -108,15 +147,24 @@ export const HomeTitle = styled.h1`
   max-width: 80%;
   position: relative;
   font-family: 'Gotham-Black';
-  font-size: 5rem;
+  font-size: 6rem;
   color: ${theme.colors.light};
   span {
     color: ${theme.colors.secondary};
   }
 
+  @media (min-width: 1200px) and (max-width: 1919px) {
+
+
+    font-size: 4.8rem;
+   }
 
   @media (min-width: 992px) and (max-width: 1199px) {
     font-size: 2.5rem;
    }
+   @media (min-width: 481px) and (max-width: 767px) {
+    font-size: 2rem;
+
+    }
   
 `

@@ -10,19 +10,38 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     max-width: 100%;
     height: auto;
+    a {
+        text-decoration: none;
+    }
     @media (min-width: 992px) and (max-width: 1199px) {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    
-    
+        width: auto;
+        margin: 0;
+        padding: 0;
     }
 
-
-
     @media (max-width: 480px) { 
-    
-}
+        body {
+            font-size: 14px; 
+        }
+        .container {
+            padding: 10px; 
+        }
+        .profile {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+        body {
+            width: 100vw;
+            font-size: 16px; 
+        }
+        .container {
+            padding: 15px; 
+        }
+    }
 }
 
 ::-webkit-scrollbar{
@@ -60,12 +79,6 @@ export const GlobalStyles = createGlobalStyle`
  font-weight: thin;
 }
 
-
-
 .font-face-gm {
     font-family: "Gotham-Bold, Gotham-Black, Gotham-Light, GothamLight";
-}
-
-
-
-`
+} `

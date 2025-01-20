@@ -20,15 +20,12 @@ export default function Home() {
           Apoiando Famílias e Estudantes na Jornada <span>Educacional</span>
         </HomeTitle>
         <p>
-          Advogada especializada em Direito Civil e Educacional, ofereço
-          soluções jurídicas específicas e acessíveis. Seja para educação
-          domiciliar, inclusão escolar, ou responsabilidade civil, estou aqui
-          para ajudar sua família a superar desafios e construir um futuro
-          educacional mais justo.
+          Advogada especialista em Direito Civil e Educacional, com foco em
+          inclusão, respeito e pluralidade pedagógica. 
         </p>
 
         <div>
-          <Button>Precisa de Ajuda? Clique Aqui!</Button>
+          <Button>Quer Ajuda? Clique Aqui!</Button>
         </div>
       </HomeContent>
     </Container>

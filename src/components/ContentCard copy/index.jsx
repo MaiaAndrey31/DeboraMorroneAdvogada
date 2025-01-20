@@ -16,7 +16,7 @@ export default function ContentCardReverse({title, image, text}) {
                 </TextContainerReverse>
                 <ImageContainerReverse>
                   <h5>{title}</h5>
-                  <img src={[image]} alt="" />
+<img src={image} alt="" /> {/* Changed from array to string */}
                 </ImageContainerReverse>
               </ContentContainerReverse>
     )

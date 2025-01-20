@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <Container>
       <ContainerLeft>
-      <img src={Logo} className="logo" />
+<img src={Logo} className="logo" alt="Logo" /> {/* Added alt attribute */}
       </ContainerLeft>
       <ContainerRight>
       <LongMenu />

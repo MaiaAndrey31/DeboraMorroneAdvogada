@@ -20,7 +20,7 @@ export default function MyServices() {
       <h1>Serviços</h1>
       <ContentCard
         title="Assessoria Jurídica em Ensino Domiciliar"
-        image={[ServiceOne]}
+image={ServiceOne} // Changed from array to string
         text="Eu me dedico a construir confiança e oferecer segurança jurídica às
             famílias que escolhem o ensino domiciliar. Estou aqui para orientar
             sobre as legislações vigentes e, se necessário, defender seus

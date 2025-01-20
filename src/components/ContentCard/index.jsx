@@ -10,7 +10,7 @@ export default function ContentCard({title, image, text}) {
         <ContentContainer>
                 <ImageContainer>
                   <h5>{title}</h5>
-                  <img src={[image]} alt="" />
+<img src={image} alt="" />
                 </ImageContainer>
         
                 <TextContainer>
