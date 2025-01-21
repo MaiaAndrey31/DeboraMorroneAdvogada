@@ -20,10 +20,12 @@ z-index: 2;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) { 
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
+
+
 
 @media (max-width: 480px) { 
     flex-direction: column;
@@ -37,6 +39,8 @@ z-index: 2;
     flex-direction: column;
     gap: 0.6rem;
     padding: 1rem;
+    justify-content: space-around;
+
 
   }
 `

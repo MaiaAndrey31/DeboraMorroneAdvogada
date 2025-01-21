@@ -4,7 +4,7 @@ import { theme } from '../../styles/theme'
 export const Container = styled.div`
 width: max-content;
 height: max-content;
-    padding: 1rem 1rem; 
+    
     @media (max-width: 768px) {
         padding: 0.5rem; // Adjust padding for mobile
     }

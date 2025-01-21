@@ -16,6 +16,13 @@ export default function TopBar(){
           <p>Instagram</p>
           </a>
           </Contact>
+           
+           <Contact>
+            <a href="mailto:deboramorrone@adv.oabsp.org.br" >
+           <EmailIcon className='icon' fontSize="large"/>
+           <p>deboramorrone@adv.oabsp.org.br</p>
+           </a>
+           </Contact>
            <Contact>
            <a href="https://wa.me/5511976008146/?text=Ola!%20Gostaria%20de%20mais%20informações" target='_blank'>
 
@@ -23,12 +30,6 @@ export default function TopBar(){
            <PhoneIcon className='icon' fontSize="large" />
            
            <p>(11) 97600-8146</p>
-           </a>
-           </Contact>
-           <Contact>
-            <a href="mailto:deboramorrone@adv.oabsp.org.br" >
-           <EmailIcon className='icon' fontSize="large"/>
-           <p>deboramorrone@adv.oabsp.org.br</p>
            </a>
            </Contact>
 

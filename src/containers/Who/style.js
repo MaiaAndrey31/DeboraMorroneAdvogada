@@ -69,12 +69,13 @@ export const ContainerLeft = styled.div`
   @media (min-width: 992px) and (max-width: 1199px) {
     padding: 5rem .225rem;
     h2 {
-      font-size: 2.3rem;
+      font-size: 2rem;
       text-align: center;
+      padding-top: 2rem;
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       letter-spacing: 0.01rem;
       line-height: 1.6rem;
       max-width: 80%;
@@ -113,15 +114,20 @@ export const ContainerRight = styled.div`
     }
 
 
-    @media (min-width: 992px) and (max-width: 1199px) {
-      gap: 1.3rem;
+    
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+      padding: 3rem 0;
       
-      img {
-        width: 360px;
-        height: 580px;
+      div {
+        align-items: center;
+    justify-content: center;
+        img {
+        width: 320px;
+        height: 520px;
+      }
       }
     }
-  }
 
   
   @media (min-width: 481px) and (max-width: 767px) {
