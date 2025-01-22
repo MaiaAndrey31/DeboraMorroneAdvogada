@@ -1,0 +1,18 @@
+version: 1.0
+
+application:
+  type: nodejs
+  nodejs:
+    version: 14
+
+environment:
+  NODE_ENV: production
+
+build:
+  commands:
+    - yarn 
+    - yarn build
+
+deploy:
+  commands:
+    - yarn dev
