@@ -3,7 +3,7 @@ import { Container, Title, ReviewBox } from './style'
 
 export default function Feedback() {
   return (
-    <Container>
+    <Container id="review">
       <Title>
         <h1>FeedBacks</h1>
       </Title>

@@ -1,31 +1,24 @@
-import styled from "styled-components"
-import { theme } from "../../styles/theme"
+import styled from 'styled-components'
+import { theme } from '../../styles/theme'
 
 export const Container = styled.div`
-height: 50vh;
-width: 100vw;
-display: flex;
-gap: 1rem;
-align-items: center;
-    padding: 1.5rem; 
-    @media (min-width: 481px) and (max-width: 767px) {
-        padding: 1rem; 
-        overflow-x: hidden; // Adjust padding for compact devices
-    }
-    @media (max-width: 768px) {
-        padding: 1rem; // Adjust padding for tablets
-    }
-background-color: ${theme.colors.dark};
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem;
 
-a {
-    display:flex;
+  background-color: ${theme.colors.dark};
+
+  a {
+    display: flex;
     gap: 0.6rem;
     align-items: center;
-    justify-content:center ;
-}
+    justify-content: center;
+  }
 
-
-@media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     height: auto;
     width: 100%;
     flex-direction: column;
@@ -33,179 +26,172 @@ a {
     justify-content: space-around;
   }
 
-@media (min-width: 992px) and (max-width: 1199px) { 
+  @media (min-width: 992px) and (max-width: 1199px) {
     height: auto;
     width: auto;
-}
+  }
 
-@media (min-width: 768px) and (max-width: 991px) { 
+  @media (min-width: 768px) and (max-width: 991px) {
     height: auto;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
-}
+  }
 
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
     flex-direction: column; // Stack elements vertically
     height: auto; // Adjust height for mobile
     padding: 1rem; // Adjust padding for mobile
-}
+  }
 `
 
 export const ContainerLeft = styled.div`
-width: 30%;
-display: flex;
-flex-direction: column;
-gap:2rem;
-background-color: ${theme.colors.primary};
-border-radius:   30px 100000px 100px 10000px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: ${theme.colors.primary};
+  border-radius: 30px 100000px 100px 10000px;
 
-a {
+  a {
     display: flex;
-    gap: .4rem;
+    gap: 0.4rem;
     align-items: center;
     padding-left: 0.6rem;
-}
+  }
 
-img {
+  img {
     max-width: 250px;
     padding: 0.6rem;
-}
+  }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     object-fit: fill;
 
     align-items: flex-start;
-    
+
     img {
-        width: 190px;
+      width: 190px;
     }
-}
+  }
 
-@media (min-width: 768px) and (max-width: 991px) { 
-
+  @media (min-width: 768px) and (max-width: 991px) {
     object-fit: fill;
     width: 100%;
-    
-    img {
-        width: 290px;
-    }
-}
 
-@media (max-width: 480px) {
+    img {
+      width: 290px;
+    }
+  }
+
+  @media (max-width: 480px) {
     width: 100%; // Full width on mobile
     img {
-        max-width: 100%; // Responsive image
+      max-width: 70%; // Responsive image
     }
-}
+  }
 
-
-@media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     width: 80%;
   }
 `
 
 export const ContainerCenter = styled.div`
-width: 30%;
-padding: 1rem;
-display: flex;
-align-items: center;
-flex-direction: column;
-gap:2rem;
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
 
-p {
+  p {
     color: ${theme.colors.light};
     font-family: 'Gotham-Light';
     font-weight: light;
     font-size: 1.4rem;
-}
+    text-decoration: none;
+  }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     p {
-        font-size: 1.2rem;
+      font-size: 1.2rem;
     }
-}
-@media (min-width: 768px) and (max-width: 991px) { 
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    object-fit: fill;
+    width: 100%;
+  }
 
-object-fit: fill;
-width: 100%;
-}
-
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
     width: 100%; // Full width on mobile
     p {
-        font-size: 1rem; // Adjust font size for mobile
+      font-size: 1rem; // Adjust font size for mobile
     }
-}
+  }
 `
 
 export const ContainerRight = styled.div`
-width: 30%;
-padding: 1rem;
-display: flex;
-align-items: start;
-flex-direction: column;
-gap:2rem;
+  width: 30%;
+  padding: 1rem;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
 
-@media (max-width: 480px) {
-    width: 100%; // Full width on mobile
-}
-@media (min-width: 768px) and (max-width: 991px) { 
-
-object-fit: fill;
-width: 100%;
-align-items: center;
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
+  @media (max-width: 480px) {
     height: auto;
-    min-width: 100%; 
+    min-width: 100%;
+    align-items: center; // Full width on mobile
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    object-fit: fill;
+    width: 100%;
     align-items: center;
+  }
 
-
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: auto;
+    min-width: 100%;
+    align-items: center;
   }
 `
 
 export const Contact = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 0.40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
 
-p {
+  p {
     color: ${theme.colors.light};
     font-family: 'Gotham-Light';
     font-weight: light;
     font-size: 1.4rem;
-}
+  }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+  @media (min-width: 992px) and (max-width: 1199px) {
     p {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
-@media (min-width: 768px) and (max-width: 991px) { 
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    object-fit: fill;
+    width: 100%;
+  }
 
-object-fit: fill;
-width: 100%;
-}
-
-@media (max-width: 480px) {
+  @media (max-width: 480px) {
     p {
-        font-size: 1rem; // Adjust font size for mobile
+      font-size: 1rem; // Adjust font size for mobile
     }
-}
+  }
 
-
-@media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 481px) and (max-width: 767px) {
     height: auto;
     width: 100%;
     a {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
-    
   }
 `

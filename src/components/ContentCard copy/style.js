@@ -19,6 +19,10 @@ background: linear-gradient(
 
 width: auto;
 }
+@media (max-width: 480px) {
+    flex-direction: column; // Stack elements vertically
+    padding: 1rem; // Adjust padding for mobile
+}
 
 
 `
@@ -57,6 +61,13 @@ p {
         font-size: .8rem;
     }
 }
+@media (max-width: 480px) {
+    width: 100%;
+    p {
+        font-size: 1rem;
+    }
+}
+
 
 
 `
@@ -88,6 +99,17 @@ img{
     border-bottom: 8px solid ${theme.colors.primary};
     
     }
+
+    @media (max-width: 480px) {
+    width: 100%; // Full width on mobile
+    img {
+        width: 100%; // Responsive image
+        max-width: 100%; // Ensure image does not exceed container width
+    }
+    h5 {
+        font-size: 1.5rem;
+    }
+}
 
     @media (min-width: 481px) and (max-width: 767px) { 
     h5 {

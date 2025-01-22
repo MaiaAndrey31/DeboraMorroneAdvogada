@@ -1,6 +1,6 @@
 import { Container, ContainerLeft, ContainerRight } from './style'
 import Logo from '../../assets/logo.png'
-import LongMenu from './menuBar'
+import FadeMenu from './menuBar'
 export default function Header() {
   return (
     <Container>
@@ -8,7 +8,7 @@ export default function Header() {
 <img src={Logo} className="logo" alt="Logo" /> {/* Added alt attribute */}
       </ContainerLeft>
       <ContainerRight>
-      <LongMenu />
+      <FadeMenu />
 
       </ContainerRight>
     </Container>

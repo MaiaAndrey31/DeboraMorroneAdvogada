@@ -1,64 +1,59 @@
-import React from 'react';
-import IconButton from '@mui/material/IconButton';
+import React from 'react';  
+import MenuIcon from '@mui/icons-material/Menu';  
+import { theme } from '../../styles/theme';  
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import MenuIcon from '@mui/icons-material/Menu';
-import { theme } from '../../styles/theme';
-const options = [
-  'Home',
-  'Sobre mim',
-  'Serviços',
-  'Contato',
-  
-];
+import Fade from '@mui/material/Fade';
 
-const ITEM_HEIGHT = 48;
-
-export default function LongMenu() {
+export default function FadeMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
 
   return (
-    <div>
-      <IconButton
-        aria-label="more"
-        aria-controls="long-menu"
+    <div >
+      <Button
+        id="fade-button"
+        aria-controls={open ? 'fade-menu' : undefined}
         aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
-        style={{color: theme.colors.secondary, width: '60px'}}
-      >Menu
-        <MenuIcon style={{color: theme.colors.secondary, width: '60px'}}/>
-        
-      </IconButton >
+        style={{ color: theme.colors.secondary  }}
+      >
+        Menu
+        <MenuIcon style={{ color: theme.colors.secondary, width: '60px' }} />  
+
+      </Button>
       <Menu
-        id="long-menu"
+        id="fade-menu"
+        MenuListProps={{
+          'aria-labelledby': 'fade-button',
+        }}
         anchorEl={anchorEl}
-        keepMounted
         open={open}
         onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: '20ch',
-            color: theme.colors.light,
-            backgroundColor: theme.colors.primary,
-            fontFamily: 'Gotham-Light'
-          },
-        }}
+        TransitionComponent={Fade}
+        
       >
-        {options.map((option) => (
-          <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
-            {option}
-          </MenuItem>
-        ))}
+        <AnchorLink style={{ textDecoration: 'none', color: theme.colors.primary  }} href="#home" >        <MenuItem style={{backgroundColor: theme.colors.secondary}}  onClick={handleClose} activeClassName="active-link">Home</MenuItem>  
+      </AnchorLink>
+      <AnchorLink style={{ textDecoration: 'none', color: theme.colors.primary }} href="#about">        <MenuItem style={{backgroundColor: theme.colors.secondary}}  onClick={handleClose} activeClassName="active-link">Sobre mim</MenuItem>  
+      </AnchorLink>
+      <AnchorLink style={{ textDecoration: 'none', color: theme.colors.primary }} href="#services">        <MenuItem style={{backgroundColor: theme.colors.secondary}}  onClick={handleClose} activeClassName="active-link">Serviços</MenuItem>  
+      </AnchorLink>
+      <AnchorLink style={{ textDecoration: 'none', color: theme.colors.primary }} href="#blog">        <MenuItem style={{backgroundColor: theme.colors.secondary}}  onClick={handleClose} activeClassName="active-link">Blog</MenuItem>  
+      </AnchorLink>
+      <AnchorLink style={{ textDecoration: 'none', color: theme.colors.primary }} href="#review">        <MenuItem style={{backgroundColor: theme.colors.secondary}}  onClick={handleClose} activeClassName="active-link" >Depoimentos</MenuItem>  
+      </AnchorLink>
+      <AnchorLink style={{ textDecoration: 'none', color: theme.colors.primary }}  href="#contact">        <MenuItem style={{backgroundColor: theme.colors.secondary}}  onClick={handleClose} activeClassName="active-link">Contatos</MenuItem>  
+      </AnchorLink>
       </Menu>
     </div>
   );

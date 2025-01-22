@@ -19,7 +19,7 @@ export const Container = styled.div`
     height: auto;
   }
 
-  @media (max-width: 480px) {
+  @media (min-width: 300px) and (max-width: 480px) {
     height: auto;
     min-width: 100%;
   }
@@ -38,7 +38,7 @@ export const Background = styled.div`
     object-fit: cover;
 
     @media (min-width: 1200px) and (max-width: 1919px) {
-      object-fit: fill;
+      object-fit: cover;
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -51,7 +51,7 @@ export const Background = styled.div`
       overflow-x: hidden;
     }
 
-    @media (max-width: 480px) {
+    @media (min-width: 300px) and (max-width: 480px) {
       overflow-x: hidden;
       object-fit: fill;
     }
@@ -62,6 +62,10 @@ export const Background = styled.div`
       object-fit: cover;
       overflow-x: hidden;
     }
+  }
+  @media (min-width: 300px) and (max-width: 480px) {
+    height: 100vh;
+    min-width: 100vw;
   }
 
   .mascara-video {
@@ -123,6 +127,13 @@ export const HomeContent = styled.div`
       letter-spacing: 1px;
     }
   }
+
+  @media (min-width: 300px) and (max-width: 480px) {
+    p {
+      font-size: 1rem;
+    }
+
+  }
   @media (min-width: 481px) and (max-width: 767px) {
     p {
       font-size: 1rem;
@@ -166,5 +177,10 @@ export const HomeTitle = styled.h1`
   }
   @media (min-width: 481px) and (max-width: 767px) {
     font-size: 2rem;
+  }
+  @media (min-width: 300px) and (max-width: 480px) {
+    
+      font-size: 2rem;
+    
   }
 `

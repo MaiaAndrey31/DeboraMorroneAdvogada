@@ -37,10 +37,17 @@ export const ContainerLeft = styled.div`
       }
   }
 
-  @media (max-width: 480px) {
+  @media (min-width: 300px) and (max-width: 480px) {
       width: 100%; // Full width on mobile
       .logo {
-          max-width: 100%; // Responsive logo
+          max-width: 50%; // Responsive logo
+      }
+  }
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+      width: 100%; // Full width on mobile
+      .logo {
+          max-width: 50%; // Responsive logo
       }
   }
 `

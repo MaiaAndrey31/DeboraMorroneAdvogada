@@ -17,6 +17,9 @@ padding-top: 2rem;
 
 
 }
+@media (max-width: 480px) {
+    flex-direction: column;
+}
 `
 
 export const ContainerRight = styled.div`
@@ -61,6 +64,14 @@ img {
   max-height: 300px;
 }
 
+}
+@media (max-width: 480px) {
+    width: 100%; // Full width on mobile
+    height: 50vh;
+
+    img {
+      width: 250px;
+    }
 }
 
 `
@@ -132,5 +143,15 @@ gap: .8rem;
 p {
   font-size: 1rem;
 }
+}
+@media (max-width: 480px) {
+    width: 100%; // Full width on mobile
+    height: 100%;
+    h2{
+    font-size: 1.5rem;
+}
+    p {
+      font-size: 1.2rem;
+    }
 }
 `

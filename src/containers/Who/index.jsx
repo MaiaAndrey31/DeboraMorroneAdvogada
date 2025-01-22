@@ -5,7 +5,7 @@ import PersonalPhoto from '../../assets/personal.jpg'
 import { Button } from '../../components/Button'
 export default function WhoSession() {
   return (
-    <Container>
+    <Container id="about">
       <ContainerLeft>
         <h2> "Compromisso com a Educação e os Direitos da Sua Família"</h2>
         <p>

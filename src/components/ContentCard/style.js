@@ -86,6 +86,10 @@ img {
 
 @media (max-width: 480px) {
     width: 100%; // Full width on mobile
+    
+    h5 {
+        font-size: 1.5rem;
+    }
     img {
         width: 100%; // Responsive image
         max-width: 100%; // Ensure image does not exceed container width

@@ -10,6 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     outline: none;
     max-width: 100%;
     height: auto;
+
     a {
         text-decoration: none;
     }

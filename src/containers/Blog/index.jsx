@@ -7,7 +7,7 @@ import { Button } from '../../components/Button'
 
 export default function BlogSession() {
   return (
-    <Container>
+    <Container id="blog">
       <ContainerLeft>
         <h2>Informação e Direitos Educacionais ao Seu Alcance</h2>
 

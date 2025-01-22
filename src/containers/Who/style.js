@@ -16,6 +16,10 @@ export const Container = styled.div`
   height: auto;
 
 }
+@media (max-width: 480px) {
+    flex-direction: column; // Stack elements vertically
+     // Adjust padding for mobile
+}
 `
 
 export const ContainerLeft = styled.div`
@@ -51,6 +55,24 @@ export const ContainerLeft = styled.div`
     text-align: center;
     font-family: 'Gotham-Light';
   }
+
+  @media (max-width: 480px) {
+    width: 100%;  
+    img {
+        width: 100%; // Responsive image
+        max-width: 100%; // Ensure image does not exceed container width
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p{
+      font-size: 1rem;
+      padding: 0 0  2rem 0;
+    }
+
+
+}
 
       @media (min-width: 481px) and (max-width: 767px) {
     height: auto;
@@ -172,4 +194,18 @@ export const ContainerRight = styled.div`
       }
     }
   }
+
+  @media (max-width: 480px) {
+    width: 100%; // Full width on mobile
+    height: auto;
+    div {
+      min-width: 100%;
+      align-items: center;
+    justify-content: center;
+    img {
+        width: 300px;
+        height: 480px;
+      }
+    }
+}
 `

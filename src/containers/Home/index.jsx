@@ -6,7 +6,7 @@ import { Button } from '../../components/Button'
 
 export default function Home() {
   return (
-    <Container>
+    <Container id="home">
       <TopBar />
       <Header />
 
