@@ -14,11 +14,17 @@ gap: 2rem;
 
 
 h1{
-    font-size: 5rem;
+    font-size: 3rem;
     color: ${theme.colors.primary};
     font-family: 'Gotham-Black';
     padding-bottom: 0.5rem;
     border-bottom: 8px double ${theme.colors.primary};
+
+
+    @media (min-width: 300px) and (max-width: 480px) {
+    font-size: 2rem;
+  }
+
 }
 
 

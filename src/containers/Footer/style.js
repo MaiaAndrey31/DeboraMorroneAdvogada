@@ -180,7 +180,7 @@ export const Contact = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 480px) {
+  @media (min-width: 300px) and (max-width: 480px) {
     p {
       font-size: 1rem; // Adjust font size for mobile
     }

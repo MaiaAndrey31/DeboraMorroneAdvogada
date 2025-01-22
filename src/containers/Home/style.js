@@ -38,7 +38,7 @@ export const Background = styled.div`
     object-fit: cover;
 
     @media (min-width: 1200px) and (max-width: 1919px) {
-      object-fit: cover;
+      object-fit: fill;
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
@@ -63,10 +63,7 @@ export const Background = styled.div`
       overflow-x: hidden;
     }
   }
-  @media (min-width: 300px) and (max-width: 480px) {
-    height: 100vh;
-    min-width: 100vw;
-  }
+  
 
   .mascara-video {
     height: 100%;
