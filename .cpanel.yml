@@ -3,7 +3,7 @@ version: 1.0
 application:
   type: nodejs
   nodejs:
-    version: 14
+    version: 18
 
 environment:
   NODE_ENV: production
