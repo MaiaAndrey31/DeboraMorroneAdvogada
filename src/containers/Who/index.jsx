@@ -8,22 +8,18 @@ export default function WhoSession() {
     <Container>
       <ContainerLeft>
         <h2> "Compromisso com a Educação e os Direitos da Sua Família"</h2>
-        <p> 
-          Como mãe de três filhos, conheço de perto as dificuldades enfrentadas
-          pelas famílias na dura missão educação dos seus filhos. Minhas experiências, inclusive como mãe de um jovem
-          com TEA e de um adolescente vítima de violência escolar, me inspiraram
-          a transformar desafios em ações concretas. Com especialização em
-          Direito Educacional e Processo Civil, além de atuar como mediadora e
-          perita judicial, meu objetivo é simplificar questões legais complexas,
-          oferecendo soluções personalizadas que atendam às necessidades de cada
-          família. Empatia, discrição e resultados são meus pilares. Vamos
-          caminhar juntos para garantir os direitos educacionais de sua família.
+        <p>
+          Sou Débora Morrone , advogada especialista em direito educacional,
+          civil, infância e adolescência. A motivação para atuar nessa área veio
+          da minha própria vivência como mãe de três filhos, que enfrentaram
+          diferentes desafios no ambiente escolar. Hoje, atendo famílias e
+          instituições de ensino, buscando garantir que cada criança tenha
+          acesso a um ambiente educacional mais seguro, inclusivo e respeitoso.
         </p>
       </ContainerLeft>
       <ContainerRight>
         <div>
           <img src={PersonalPhoto} />
-          
         </div>
         <Button>Entre em Contato</Button>
       </ContainerRight>

@@ -1,15 +1,9 @@
-import {
-  Container,
-  
-  
-} from './style'
+import { Container } from './style'
 import ServiceOne from '../../assets/homeschooling.jpg'
 import ServiceTwo from '../../assets/School.jpg'
 import Inclusion from '../../assets/Inclusao.jpg'
 import Progress from '../../assets/Progress.jpg'
 import Payments from '../../assets/Payments.jpg'
-import LocaleSchool from '../../assets/Vagas.jpg'
-
 
 import ContentCard from '../../components/ContentCard'
 import ContentCardReverse from '../../components/ContentCard copy'
@@ -19,63 +13,54 @@ export default function MyServices() {
     <Container>
       <h1>Serviços</h1>
       <ContentCard
-        title="Assessoria Jurídica em Ensino Domiciliar"
-image={ServiceOne} // Changed from array to string
-        text="Eu me dedico a construir confiança e oferecer segurança jurídica às
-            famílias que escolhem o ensino domiciliar. Estou aqui para orientar
-            sobre as legislações vigentes e, se necessário, defender seus
-            direitos em processos judiciais, garantindo que essa escolha seja
-            respeitada e amparada pela lei."
+        title="Educação Domiciliar e Ensino Personalizado"
+        image={ServiceOne} // Changed from array to string
+        text="Se você acredita que seu filho precisa de um ensino personalizado e considera o ensino domiciliar como uma alternativa, posso ajudar a esclarecer as questões legais e orientar para que essa escolha seja feita com o planejamento adequado e segurança jurídica."
       />
 
       <ContentCardReverse
-        title="Responsabilidade Civil da Escola"
+        title="Responsabilidade Civil Escolar"
         image={[ServiceTwo]}
-        text="Proteger a dignidade e a segurança dos estudantes, lutando por
-            justiça em casos de negligência escolar. Quando o bullying, a
-            violência ou o assédio ameaçam o ambiente educacional, meu
-            compromisso é estar ao lado das famílias, garantindo que esses
-            jovens sejam ouvidos e protegidos."
+        text="Se seu filho sofreu bullying, 
+        negligência ou violência dentro da escola, 
+        entendo a dor e a frustração que isso traz. 
+        Essas situações causam marcas profundas, 
+        mas é importante saber que existem leis que 
+        podem proteger crianças e adolescentes 
+        nesses casos, além da possibilidade de 
+        buscar a devida reparação."
       />
       <ContentCard
         title="Inclusão e Acessibilidade"
         image={[Inclusion]}
-        text="Inspirado pela minha vivência com TEA, meu objetivo é transformar a
-            educação em um espaço verdadeiramente inclusivo, onde cada aluno com
-            deficiência possa alcançar seu potencial máximo. Acreditando no
-            poder da inclusão, quero ajudar a construir um futuro mais
-            acessível."
+        text="Como mãe de um jovem TEA, entendo a 
+        importância de garantir um ambiente escolar 
+        inclusivo e acessível. Meu trabalho é ajudar
+         famílias a garantir que seus filhos tenham 
+         os recursos e o suporte necessários para 
+         desenvolver todo o seu potencial."
       />
       <ContentCardReverse
         title="Progressão e Avaliação Escolar"
         image={[Progress]}
-        text="A educação do seu filho merece ser tratada com respeito e justiça.
-            Se ele foi retido sem justificativa legal, submetido a critérios de
-            avaliação inadequados, ou está impedido de prosseguir apesar de um
-            alto desempenho, estou aqui para ajudar."
+        text="Seja em casos de retenção 
+        injusta ou na possibilidade de avanço de 
+        série para estudantes que se destacam por 
+        esforço ou superdotação, meu papel é orientar 
+        as famílias sobre os caminhos legais para 
+        garantir que cada estudante tenha oportunidades 
+        de acordo com seu potencial."
       />
       <ContentCard
-        title="Direito do Consumidor no Ambiente Escolar"
+        title="Direito do Consumidor no Âmbito Escolar"
         image={[Payments]}
-        text=" Meu propósito é proteger famílias de práticas abusivas, como
-            cobranças indevidas e cláusulas contratuais injustas. Meu
-            compromisso é assegurar que seus direitos sejam respeitados,
-            oferecendo apoio e orientação para que ninguém enfrente essas
-            situações sozinho."
-      />    
-      <ContentCardReverse
-        title="Busca de Vagas em Creches e Escolas Públicas"
-        image={[LocaleSchool]}
-        text="Dedico-me a garantir que cada criança tenha acesso ao seu lugar de
-            direito em creches e escolas públicas, honrando o compromisso com a
-            educação como um direito constitucional. Cada vaga conquistada é um
-            passo para um futuro mais justo e cheio de possibilidades para todas
-            as crianças."
+        text=" Você já se sentiu tratado de forma 
+        injusta por uma instituição de ensino? 
+        Cobranças indevidas, contratos abusivos e 
+        falta de transparência são situações comuns 
+        e que necessitam de uma solução jurídica 
+        adequada."
       />
-
-        
-      
-      
     </Container>
   )
 }

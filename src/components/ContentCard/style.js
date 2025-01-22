@@ -25,6 +25,13 @@ background: linear-gradient(
 @media (min-width: 992px) and (max-width: 1199px) { 
     width: auto;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    width: 100%;
+}
+@media (min-width: 481px) and (max-width: 767px) { 
+    width: 100%;
+    padding: 1rem;
+}
 
 @media (max-width: 480px) {
     flex-direction: column; // Stack elements vertically
@@ -61,6 +68,22 @@ img {
     }
 }
 
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    h5{
+        font-size: 1.5rem;
+    }
+    img {
+        width: 500px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) { 
+    h5 {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 480px) {
     width: 100%; // Full width on mobile
     img {
@@ -78,11 +101,11 @@ display: flex;
 gap: 2rem;
 flex-direction: column;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 
 p {
-    width: 600px;
-    font-size: 2.4rem;
+    width: max-content;
+    font-size: 2rem;
     font-family: 'Gotham-Light';
     color: ${theme.colors.light};
 }
@@ -92,6 +115,20 @@ p {
         font-size: 1.5rem;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    p {
+        font-size: 1.2rem;
+    }
+
+}
+@media (min-width: 481px) and (max-width: 767px) { 
+    p {
+        font-size: .8rem;
+    }
+}
+
 
 @media (max-width: 480px) {
     width: 100%; // Full width on mobile

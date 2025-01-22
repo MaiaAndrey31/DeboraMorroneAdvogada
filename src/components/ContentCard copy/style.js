@@ -6,7 +6,7 @@ height: 100%;
 width: 100vw;
 display: flex;
 gap: 2rem;
-padding: 3rem 3rem 3rem 3rem;
+padding: 1rem;
 border-top: 7px solid ${theme.colors.secondary};
 border-radius: 30px;
 background: linear-gradient(
@@ -30,19 +30,32 @@ display: flex;
 gap: 2rem;
 flex-direction: column;
 align-items: center;
-justify-content: space-between ;
+justify-content: space-around ;
 p{
-    width: 600px;
-    font-size: 2.4rem;
+    width: max-content;
+    font-size: 2rem;
     font-family: 'Gotham-Light';
     color: ${theme.colors.light};
     
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {} 
+@media (min-width: 992px) and (max-width: 1199px) { 
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+}
+
+}
+@media (min-width: 481px) and (max-width: 767px) { 
+    p {
+        font-size: .8rem;
+    }
 }
 
 
@@ -75,6 +88,22 @@ img{
     border-bottom: 8px solid ${theme.colors.primary};
     
     }
+
+    @media (min-width: 481px) and (max-width: 767px) { 
+    h5 {
+        font-size: 1rem;
+    }
+}
+
+    @media (min-width: 768px) and (max-width: 991px) {
+
+h5{
+    font-size: 1.5rem;
+}
+img {
+    width: 500px;
+}
+}
 
     @media (min-width: 992px) and (max-width: 1199px) {
 

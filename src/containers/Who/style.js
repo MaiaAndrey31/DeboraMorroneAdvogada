@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme'
 
 export const Container = styled.div`
-  min-height: 100vh;
+  min-height: 100%;
   max-width: 100vw;
   background-color: ${theme.colors.dark};
   display: flex;
-
+  padding: 2rem 0 0 0;
   align-items: center;
   justify-content: center;
 
@@ -20,14 +20,13 @@ export const Container = styled.div`
 
 export const ContainerLeft = styled.div`
   width: 50%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding-left: 6rem;
-
+  padding: 0 2rem ;
   background: linear-gradient(
     -145deg,
     rgba(51, 51, 51, 0.01) 15%,
@@ -37,7 +36,7 @@ export const ContainerLeft = styled.div`
 
   h2 {
     color: ${theme.colors.secondary};
-    font-size: 4rem;
+    font-size: 2rem;
     text-align: center;
 
     font-family: 'Gotham-Black';
@@ -47,7 +46,7 @@ export const ContainerLeft = styled.div`
     color: ${theme.colors.light};
     font-size: 24px;
     letter-spacing: 0.11rem;
-    line-height: 1.9rem;
+    line-height: 1.6rem;
     max-width: 90%;
     text-align: center;
     font-family: 'Gotham-Light';
@@ -55,7 +54,7 @@ export const ContainerLeft = styled.div`
 
       @media (min-width: 481px) and (max-width: 767px) {
     height: auto;
-    width: 100%;
+    width: 80%;
     
         h2 {
       font-size: 1.5rem;
@@ -63,9 +62,25 @@ export const ContainerLeft = styled.div`
 
     p{
       font-size: 1rem;
+      padding: 0 0  2rem 0;
     }
     
       }
+      
+      @media (min-width: 768px) and (max-width: 991px) { 
+
+        height: auto;
+    width: 100%;
+    padding: 2rem 1rem;
+    
+        h2 {
+      font-size: 1.2rem;
+    }
+
+    p{
+      font-size: .8rem;
+    }
+}
   @media (min-width: 992px) and (max-width: 1199px) {
     padding: 5rem .225rem;
     h2 {
@@ -86,8 +101,9 @@ export const ContainerLeft = styled.div`
 `
 
 export const ContainerRight = styled.div`
-  height: 100vh;
+  height: 100%;
   width: 50%;
+  padding:  2rem 0;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -128,6 +144,17 @@ export const ContainerRight = styled.div`
       }
       }
     }
+    @media (min-width: 768px) and (max-width: 991px) { 
+      div {
+        align-items: center;
+    justify-content: center;
+        img {
+        width: 300px;
+        height: 480px;
+      }
+      }
+    
+}
 
   
   @media (min-width: 481px) and (max-width: 767px) {
@@ -139,6 +166,10 @@ export const ContainerRight = styled.div`
       min-width: 100%;
       align-items: center;
     justify-content: center;
+    img {
+        width: 300px;
+        height: 480px;
+      }
     }
   }
 `

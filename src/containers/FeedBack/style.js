@@ -2,12 +2,19 @@ import styled from "styled-components"
 import { theme } from "../../styles/theme"
 
 export const Container = styled.div`
+display: flex;
+flex-direction: column; 
+align-items: center;
 height: auto;
 width: auto;
 background-color: ${theme.colors.primary};
 
 @media (min-width: 992px) and (max-width: 1199px) {
    padding: 1rem 0.2rem ;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+padding: 2rem;
+
 }
 
 @media (max-width: 480px) {
@@ -37,19 +44,32 @@ export const Title = styled.div`
 
 export const ReviewBox = styled.div`
 display: flex;
-gap: .1rem;
+width: 80%;
+flex-direction: column;
+gap: .8rem;
 justify-content: space-around;
 padding: 2rem;
 
+
+
 @media (min-width: 992px) and (max-width: 1199px) {
    flex-direction: column;
-   max-width: auto;
+   
    justify-content: center;
    align-items: center;
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+flex-direction: column;
+padding: 0rem 4rem;
+gap: 1.2rem;
+justify-content: center;
+align-items: center;
 }
 
 @media (max-width: 480px) {
    flex-direction: column; // Stack reviews vertically on mobile
    padding: 1rem; // Adjust padding for mobile
 }
+
 `

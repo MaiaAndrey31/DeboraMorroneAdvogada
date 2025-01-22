@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme'
 
 export const Container = styled.div`
-height: auto;
+  height: auto;
   padding-bottom: 4rem; /* Adjusted for better spacing on smaller screens */
   @media (max-width: 768px) {
     padding-bottom: 2rem; /* Further adjust for tablets */
@@ -10,18 +10,16 @@ height: auto;
   width: 100%;
 
   @media (min-width: 1200px) and (max-width: 1919px) {
-
     padding-bottom: 2rem;
-   }
+  }
 
-
-  @media (min-width: 992px) and (max-width: 1199px) { 
-
+  @media (min-width: 992px) and (max-width: 1199px) {
     width: 100%;
-    padding-bottom: 4rem;
+
     height: auto;
   }
-  @media (max-width: 480px) { 
+
+  @media (max-width: 480px) {
     height: auto;
     min-width: 100%;
   }
@@ -40,31 +38,31 @@ export const Background = styled.div`
     object-fit: cover;
 
     @media (min-width: 1200px) and (max-width: 1919px) {
-
       object-fit: fill;
-     }
-
+    }
 
     @media (min-width: 992px) and (max-width: 1199px) {
-
       object-fit: fill;
-     }
-    
-    @media (max-width: 480px) { 
-    overflow-x: hidden;
-    object-fit: fill;
-  }
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    overflow-x: hidden;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      height: 100%;
+      max-width: min-content;
+      object-fit: cover;
+      overflow-x: hidden;
+    }
 
+    @media (max-width: 480px) {
+      overflow-x: hidden;
+      object-fit: fill;
+    }
 
-   
+    @media (min-width: 481px) and (max-width: 767px) {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+      overflow-x: hidden;
+    }
   }
-}
 
   .mascara-video {
     height: 100%;
@@ -82,8 +80,8 @@ export const Background = styled.div`
 
 export const HomeContent = styled.div`
   display: flex;
-    padding: 3.999rem 0rem; 
-    
+  padding: 3.999rem 0rem;
+
   gap: 4rem;
   flex-direction: column;
   justify-content: center;
@@ -124,22 +122,25 @@ export const HomeContent = styled.div`
       background-color: transparent;
       letter-spacing: 1px;
     }
-
-   
   }
   @media (min-width: 481px) and (max-width: 767px) {
-
-
     p {
       font-size: 1rem;
-
     }
-    }
+  }
 
-  @media (min-width: 992px) and (max-width: 1199px) { 
+  @media (min-width: 992px) and (max-width: 1199px) {
     justify-content: flex-start;
     gap: 1.2rem;
     padding: 2rem;
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    justify-content: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+    p {
+      font-size: 1.5rem;
+    }
   }
 `
 
@@ -154,17 +155,16 @@ export const HomeTitle = styled.h1`
   }
 
   @media (min-width: 1200px) and (max-width: 1919px) {
-
-
     font-size: 4.8rem;
-   }
+  }
 
   @media (min-width: 992px) and (max-width: 1199px) {
     font-size: 2.5rem;
-   }
-   @media (min-width: 481px) and (max-width: 767px) {
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 2.2rem;
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
     font-size: 2rem;
-
-    }
-  
+  }
 `

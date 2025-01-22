@@ -25,6 +25,13 @@ z-index: 2;
     justify-content: space-around;
 }
 
+@media (min-width: 768px) and (max-width: 991px) { 
+
+    padding: 0.8rem 0;
+}
+
+
+
 
 
 @media (max-width: 480px) { 
@@ -67,8 +74,15 @@ p {
     font-weight: light;
 }
 
+@media (min-width: 768px) and (max-width: 991px) { 
+
+    p {
+        font-size: 1.2rem;
+    }
+
+}
+
 @media (max-width: 480px) { 
-    margin: 0 auto;
     p {
         font-size: 1rem; // Adjust font size for mobile
     }

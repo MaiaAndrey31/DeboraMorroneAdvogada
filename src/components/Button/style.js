@@ -29,9 +29,7 @@ position: relative;
 display: flex;
 gap: 8px;
     padding: 1rem 2rem; 
-    @media (min-width: 481px) and (max-width: 767px) {
-        padding: 0.75rem 1.5rem; // Adjust padding for compact devices
-    }
+    
 align-items: center;
 justify-content: center;
 width: 100%;
@@ -53,4 +51,10 @@ text-shadow:  1px  2px 4px ${theme.colors.dark};
 @media (max-width: 480px) {
     font-size: 16px; // Adjust font size for mobile
     padding: 0.5rem 1rem; // Adjust padding for mobile
-}`
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    font-size: 12px;
+        padding: 0.75rem 1.5rem; // Adjust padding for compact devices
+    }
+`
