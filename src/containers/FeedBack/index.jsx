@@ -5,7 +5,7 @@ export default function Feedback() {
   return (
     <Container id="review">
       <Title>
-        <h1>FeedBacks</h1>
+        <h1>Depoimentos</h1>
       </Title>
 
       <ReviewBox>
