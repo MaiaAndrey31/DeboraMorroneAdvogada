@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Container, ContainerLeft, ContainerRight } from './style'
 
-import PersonalPhoto from '../../assets/personal.jpg'
+import PersonalPhoto from '../../assets/personal.webp'
 import { Button } from '../../components/Button'
 export default function WhoSession() {
   return (

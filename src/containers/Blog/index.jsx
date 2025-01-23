@@ -1,7 +1,7 @@
 import { Container, ContainerRight, ContainerLeft } from './style'
 
 
-import SessionImg from '../../assets/SessionImg.jpg'
+import SessionImg from '../../assets/SessionImg.webp'
 import { Button } from '../../components/Button'
 
 
