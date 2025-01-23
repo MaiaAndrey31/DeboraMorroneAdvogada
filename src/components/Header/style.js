@@ -5,6 +5,7 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   padding: 1rem; 
   @media (max-width: 768px) {
       padding: 0.5rem; // Adjust padding for tablets
@@ -18,6 +19,7 @@ export const ContainerLeft = styled.div`
   display: flex;
   width: 50%;  
   align-items: center;
+  
   margin-left: .5rem;
 
   .logo {

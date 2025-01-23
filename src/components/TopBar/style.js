@@ -35,17 +35,16 @@ z-index: 2;
 
 
 @media (max-width: 480px) { 
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem; // Adjust padding for mobile
+    flex-wrap: wrap;
+    gap: .3rem;
+    padding: .3rem; // Adjust padding for mobile
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     height: auto;
     min-width: 100%; 
-    flex-direction: column;
     gap: 0.6rem;
-    padding: 1rem;
+    padding: .3rem;
     justify-content: space-around;
 
 
@@ -82,8 +81,16 @@ p {
 
 }
 
+@media (min-width: 481px) and (max-width: 767px) { 
+
+p {
+    font-size: .8rem;
+}
+
+}
+
 @media (max-width: 480px) { 
     p {
-        font-size: 1rem; // Adjust font size for mobile
+        font-size: .7rem; // Adjust font size for mobile
     }
 } `

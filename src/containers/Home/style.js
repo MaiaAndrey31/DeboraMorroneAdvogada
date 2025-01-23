@@ -53,7 +53,8 @@ export const Background = styled.div`
 
     @media (min-width: 300px) and (max-width: 480px) {
       overflow-x: hidden;
-      object-fit: fill;
+      object-fit: cover;
+      height: 100%;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
