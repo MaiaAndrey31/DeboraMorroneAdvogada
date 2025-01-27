@@ -20,7 +20,7 @@ background: linear-gradient(
 width: auto;
 }
 @media (max-width: 480px) {
-    flex-direction: column; // Stack elements vertically
+    flex-direction: column-reverse; // Stack elements vertically
     padding: 1rem; // Adjust padding for mobile
 }
 
