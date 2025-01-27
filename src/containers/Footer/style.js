@@ -51,7 +51,7 @@ export const ContainerLeft = styled.div`
   width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   gap: 2rem;
   background-color: ${theme.colors.primary};
   border-radius: 30px 100000px 100px 10000px;
@@ -163,7 +163,6 @@ export const ContainerRight = styled.div`
 export const Contact = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.4rem;
 
   p {
